@@ -1,0 +1,1 @@
+`if err != nil {` が無いとdeclared and not usedになって怒られる。
