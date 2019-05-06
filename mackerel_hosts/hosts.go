@@ -14,6 +14,8 @@ func main() {
 	})
 
 	for _, v := range hosts {
-		fmt.Printf("\n HOSTID: %v\n Name: %v\n", v.ID, v.Name)
+		if v.ID == "XXXXXXX" {
+			fmt.Printf("\n HOSTID: %v\n Name: %v\n", v.ID, v.Name)
+		}
 	}
 }
