@@ -14,6 +14,6 @@ func main() {
 	})
 
 	for _, v := range hosts {
-		fmt.Println(v.Name)
+		fmt.Printf(" HOSTID: %v\n Name: %v\n\n", v.ID, v.Name)
 	}
 }
