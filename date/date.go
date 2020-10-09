@@ -1,10 +1,13 @@
 package main
 
-import {
+import (
 	"fmt"
 	"time"
-}
 
-func main {
+	"github.com/leekchan/timeutil"
+)
 
+func main() {
+	n := time.Now()
+	fmt.Println(timeutil.Strftime(&n, "%Y-%m-%d"))
 }
