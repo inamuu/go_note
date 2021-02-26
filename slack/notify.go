@@ -5,6 +5,7 @@ import (
 	"fmt"
 	"net/http"
 	"net/url"
+	"os"
 )
 
 type payload struct {
@@ -29,7 +30,7 @@ func slackNotify(webhookUrl string) (err error) {
 }
 
 func main() {
-	webhookUrl := ""
+	webhookUrl := os.Getenv("SLACKURL")
 	err := slackNotify(webhookUrl)
 	if err != nil {
 		return
