@@ -1,6 +1,8 @@
 Test Sendgrid API v3 using sendgrid-go
 ---
 
+I want to add a contact to my contact list of sendgrid marketing campaign.
+
 ref: https://github.com/sendgrid/sendgrid-go#processing-inbound-email
 
 ## How to use
