@@ -30,7 +30,12 @@ func main() {
 		"contacts":[{"email":"%s"}]
 		}`, list_id, email))
 
-	req, _ := http.NewRequest("PUT", url, payload)
+	req, err := http.NewRequest("PUT", url, payload)
+
+	if err != nil {
+		fmt.Println(err)
+		return
+	}
 
 	req.Header.Add("authorization", "Bearer "+fmt.Sprintf(apiKey))
 	req.Header.Add("content-type", "application/json")
